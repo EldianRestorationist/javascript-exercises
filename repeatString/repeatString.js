@@ -1,7 +1,11 @@
-const repeatString = function(text, num) {
-    for (i = 0; i < num; i++) {
-        return text;
+var repeatString = function(text, num) {
+    let textString = '';
+    if (num < 0) {
+        return 'ERROR';
     }
+    for (let i = 0; i < num; i++) {
+        textString += text;
+    }
+    return textString;
 }
-repeatString('hey', 3);
 module.exports = repeatString
